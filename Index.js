@@ -8,6 +8,7 @@ const exstraction = () => {
   for (i = 0; i < exstractedNmb.length; i++) {
     if (exstractedNmb[i] === randomNmb) {
       exstraction();
+      return;
     }
   }
   exstractedNmb.push(randomNmb);
