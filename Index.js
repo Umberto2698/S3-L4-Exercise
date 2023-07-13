@@ -6,7 +6,7 @@ let exstractedNmb = [];
 const exstraction = () => {
   estratti.innerHTML = "";
   let randomNmb = Math.floor(Math.random() * 76 + 1);
-  for (i = 0; i < exstractedNmb.length; i++) {
+  for (let i = 0; i < exstractedNmb.length; i++) {
     if (exstractedNmb[i] === randomNmb) {
       exstraction();
       return;
@@ -20,7 +20,7 @@ const exstraction = () => {
   estratti.appendChild(p);
 };
 
-for (i = 0; i < 76; i++) {
+for (let i = 0; i < 76; i++) {
   const casella = document.createElement("div");
   casella.classList.add("casella");
   const nmbLocation = document.createElement("p");
