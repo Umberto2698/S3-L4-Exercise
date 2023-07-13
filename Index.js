@@ -4,6 +4,7 @@ const estratti = document.getElementById("estratti");
 let exstractedNmb = [];
 
 const exstraction = () => {
+  estratti.innerHTML = "";
   let randomNmb = Math.floor(Math.random() * 76 + 1);
   for (i = 0; i < exstractedNmb.length; i++) {
     if (exstractedNmb[i] === randomNmb) {
@@ -14,9 +15,9 @@ const exstraction = () => {
   exstractedNmb.push(randomNmb);
   let selectedCasella = tabellone.childNodes[parseInt(randomNmb) - 1];
   selectedCasella.innerHTML = `<i class="fas fa-times cellAfterClick"><span>${randomNmb}</span></i>`;
-  const li = document.createElement("li");
-  li.innerText = `è stato estratto il numero ${randomNmb}`;
-  estratti.appendChild(li);
+  const p = document.createElement("p");
+  p.innerHTML = "&Egrave; stato estratto il numero " + randomNmb;
+  estratti.appendChild(p);
 };
 
 for (i = 0; i < 76; i++) {
