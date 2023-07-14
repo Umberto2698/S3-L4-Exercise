@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
@@ -10,14 +11,11 @@ body {
   margin-block: 20px;
   background-color: orange;
 }
-.container {
-  background-color: #854a35;
-  padding-block: 30px;
-  padding-inline: 20px;
-}
+
 header {
   text-align: center;
 }
+
 h1 {
   font-size: 80px;
   font-family: "VT323", monospace;
@@ -35,6 +33,12 @@ main {
   margin-top: 30px;
 }
 
+.container {
+  background-color: #854a35;
+  padding-block: 30px;
+  padding-inline: 20px;
+}
+
 #forbutton {
   text-align: center;
   height: 50px;
@@ -50,6 +54,7 @@ main {
   height: 100%;
   border-radius: 10px;
 }
+
 .simbol {
   font-size: 20px;
 }
@@ -70,6 +75,7 @@ main {
   font-weight: bold;
   padding-top: 30px;
 }
+
 .cellAfterClick {
   font-size: 20px;
   font-weight: bold;
